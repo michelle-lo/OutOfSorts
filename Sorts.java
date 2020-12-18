@@ -5,18 +5,16 @@ public class Sorts{
   */
   public static void bubbleSort(int[] data){
     for (int i = 1; i < data.length; i++) {
-      int noSwap = 0;
+      int swaps = 0;
       for (int j = 0; j < data.length - i; j++) {
         if (data[j] > data[j + 1]) {
           int temp = data[j];
           data[j] = data[j + 1];
           data[j + 1] = temp;
-        } else {
-          noSwap++;
+          swaps++;
         }
-
       }
-      if (noSwap == data.length - i) {
+      if (swaps == 0) {
         i = data.length;
       }
     }
