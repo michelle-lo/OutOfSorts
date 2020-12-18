@@ -4,7 +4,7 @@ public class Sorts{
   *@param data  the elements to be sorted.
   */
   public static void bubbleSort(int[] data){
-    for (int i = 1; i < data.length - 1; i++) {
+    for (int i = 1; i < data.length; i++) {
       int noSwap = 0;
       for (int j = 0; j < data.length - i; j++) {
         if (data[j] > data[j + 1]) {

@@ -11,6 +11,8 @@ public class Tester {
     Sorts.bubbleSort(b);
     System.out.println(Arrays.toString(b));
 
-
+    int[] c = {2, 3, 4, 5, 1};
+    Sorts.bubbleSort(c);
+    System.out.println(Arrays.toString(c));
   }
 }
