@@ -61,7 +61,20 @@ public class Tester {
     Sorts.selectionSort(reverse2);
     print(Arrays.toString(reverse2), "[94, 95, 96, 97, 98, 99]");
 
-    
+    System.out.println("***\ninsertionSort\n***");
+    int[] a3 = {4, 3, 2, 10, 12, 1, 5, 6};
+    Sorts.insertionSort(a3);
+    print(Arrays.toString(a3), "[1, 2, 3, 4, 5, 6, 10, 12]");
+
+    int[] reverse3 = {10, 8, 6, 4, 2, 0, -2};
+    Sorts.insertionSort(reverse3);
+    print(Arrays.toString(reverse3), "[-2, 0, 2, 4, 6, 8, 10]");
+
+    int[] sorted3 = {1, 2, 3, 4, 5};
+    Sorts.insertionSort(sorted3);
+    print(Arrays.toString(sorted3), "[1, 2, 3, 4, 5]");
+
+
   }
 
   public static void print (Object actual, Object expected) {
